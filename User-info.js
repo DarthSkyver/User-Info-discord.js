@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const moment = require('moment');
+const moment = require('moment');  //pour installer moment => npm i moment
 
-module.exports.run = async (Client, message, args) => {
+module.exports.run = async (Client, message, args) => {    
 
     const user = Client.users.cache.get(args[0]) || message.mentions.users.first() || message.author
 
@@ -24,3 +24,5 @@ module.exports.run = async (Client, message, args) => {
 module.exports.config = {
     name: 'user-info'
 }
+
+// si vous avez le moindre probème, ajoutez moi en amis sur discord : DarthSkyver__#0008
